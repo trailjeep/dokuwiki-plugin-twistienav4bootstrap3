@@ -1,0 +1,11 @@
+/** 
+ * Print Stylesheet for TwistieNav plugin
+ *
+ * @author Simon Delage <simon.geekitude@gmail.com>
+ */
+
+#dokuwiki__pageheader #dw__breadcrumbs #dw__youarehere .breacrumb span.twistienav_twistie,
+#dokuwiki__pageheader #dw__breadcrumbs span.twistienav_twistie:before,
+#dokuwiki__pageheader .twistienav_map:before {
+    display: none;
+}
