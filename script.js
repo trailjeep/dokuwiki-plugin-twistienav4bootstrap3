@@ -4,6 +4,7 @@
  * @license  GPL2 (http://www.gnu.org/licenses/gpl.html)
  * @author   Paolo Maggio <maggio.p@gmail.com>
  * @author   Håkan Sandell <sandell.hakan@gmail.com>
+ * @author   Trailjeep <trailjeep@gmail.com>
  */
 
 var twistienav4bootstrap3_plugin = {
@@ -13,12 +14,12 @@ var twistienav4bootstrap3_plugin = {
     init: function () {
 	var $match = 0;
 console.log('x');
-        if ((JSINFO['conf']['breadcrumbs'] > 0) && (jQuery('div.dw__youarehere').length !== 0)) {
-            twistienav4bootstrap3_plugin.breadcrumbs('div.dw__youarehere', 'yah_ns');
+        if ((JSINFO['conf']['breadcrumbs'] > 0) && (jQuery('div.dw__breadcrumbs').length !== 0)) {
+            twistienav4bootstrap3_plugin.breadcrumbs('div.dw__breadcrumbs', 'bc_ns');
 			$match++;
         }
-        if ((JSINFO['conf']['youarehere'] == 1) && (jQuery('div.dw__breadcrumbs').length !== 0)) {
-            twistienav4bootstrap3_plugin.breadcrumbs('div.dw__breadcrumbs', 'bc_ns');
+        if ((JSINFO['conf']['youarehere'] == 1) && (jQuery('div.dw__youarehere').length !== 0)) {
+            twistienav4bootstrap3_plugin.breadcrumbs('div.dw__youarehere', 'yah_ns');
 			$match++;
         }
         if ((JSINFO['plugin_twistienav4bootstrap3']['pit_skeleton'] != null) && (jQuery('.pageId').length !== 0)) {
@@ -99,7 +100,7 @@ console.log('x');
             jQuery.post(
                 DOKU_BASE + 'lib/exe/ajax.php',
                 {
-                    call: 'plugin_twistienav_pageid',
+                    call: 'plugin_twistienav4bootstrap3_pageid',
                     idx: encodeURI(namespace)
                 },
                 twistienav4bootstrap3_plugin.onCompletion,
