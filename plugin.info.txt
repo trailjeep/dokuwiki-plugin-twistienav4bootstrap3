@@ -1,7 +1,7 @@
 base   twistienav4bootstrap3
-author Paolo Maggio
-email  maggio.p@gmail.com
-date   2019-01-24
+author Trailjeep
+email  trailjeep@gmail.com
+date   2020-06-06
 name   TwistieNav plugin for Bootstrap 3 template
 desc   Adds drop-down navigation menus to breadcrumbs - original plugin twistienav adapted for Bootstrap 3 template
 url    http://www.dokuwiki.org/plugin:twistienav4bootstrap3
